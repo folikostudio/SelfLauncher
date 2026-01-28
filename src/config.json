@@ -5,5 +5,5 @@
     "commands": {
         "exit": { "type": "exit" },
         "hello": { "type": "print", "value": "Hello Moto" }
-    },
+    }
 }
