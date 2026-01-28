@@ -1,0 +1,9 @@
+{
+    "launcher_name": "SelfLauncher",
+    "version": "0.1",
+
+    "commands": {
+        "exit": { "type": "exit" },
+        "hello": { "type": "print", "value": "Hello Moto" }
+    },
+}
