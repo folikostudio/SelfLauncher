@@ -1,15 +1,18 @@
+# core/commands.py
 class CommandRegistry:
     def __init__(self):
-        self._commands = {}
+        self.commands = {}
 
     def register(self, name, func):
-        self._commands[name] = func
+        self.commands[name] = func
 
-    def execute(self, name):
-        if name not in self._commands:
-            print("[core] Unknown command or arguments")
+    def execute(self, name, args=None):
+        func = self.commands.get(name)
+        if not func:
+            print(f"[core] Unknown command or arguments")
             return
-        self._commands[name]()
-
-    def list(self):
-        return list(self._commands.keys())
+        try:
+            # args
+            func(args)
+        except Exception as e:
+            print(f"[core ERROR] {e}")
