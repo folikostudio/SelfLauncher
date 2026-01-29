@@ -1,10 +1,24 @@
+# core/commands_from_config.py
+
 def load_config_commands(config, registry):
-    for name, info in config.get("commands", {}).items():
-        cmd_type = info.get("type")
+    commands = config.get("commands", {})
 
-        if cmd_type == "print":
-            text = info.get("value", "")
-            registry.register(name, lambda t=text: print(t))
+    for name, cmd in commands.items():
+        ctype = cmd.get("type")
 
-        elif cmd_type == "exit":
-            registry.register(name, lambda: exit(0))
+        # ---------------- PRINT ----------------
+        if ctype == "print":
+            value = cmd.get("value", "")
+
+            def make_print(val):
+                def _cmd(args=None):
+                    print(val)
+                return _cmd
+
+            registry.register(name, make_print(value))
+
+        # ---------------- EXIT ----------------
+        elif ctype == "exit":
+            def _exit(args=None):
+                raise SystemExit
+            registry.register(name, _exit)
