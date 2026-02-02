@@ -5,9 +5,12 @@ from core.plugin_loader import PluginLoader
 from core.commands_from_config import load_config_commands
 
 # For plugins
-import tkinter
-import PyQt5
-from mistralai import Mistral
+from core.imports import *
+
+arr = np.array([1, 2, 3])
+df = pd.DataFrame([1,2,3])
+plt.plot([1,2,3])
+
 
 def main():
     # --------------------------------------------------
