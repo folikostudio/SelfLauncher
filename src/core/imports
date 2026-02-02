@@ -1,0 +1,233 @@
+# core/imports.py
+
+# ===========================================================
+# Scientific computing and machine learning libraries
+# ===========================================================
+
+import numpy as np        # Numerical computing
+import pandas as pd       # Data manipulation and analysis
+import matplotlib.pyplot as plt  # Plotting and visualization
+import seaborn as sns     # Statistical data visualization
+import scipy              # Scientific computing
+import sklearn            # Machine learning tools (scikit‑learn)
+import xgboost            # Gradient boosting library
+import lightgbm           # Light gradient boosting machine
+import catboost           # Category boosting algorithm
+
+import torch              # PyTorch core library
+import torchvision        # Vision utilities for PyTorch
+import torchaudio         # Audio utilities for PyTorch
+import tensorflow as tf   # TensorFlow core library
+
+# ===========================================================
+# HTTP, async and web frameworks
+# ===========================================================
+
+import requests           # HTTP client library
+import aiohttp            # Async HTTP client/server
+import websockets         # WebSockets support
+
+import flask              # Flask web framework
+import django             # Django web framework components
+import fastapi            # FastAPI high‑performance API framework
+import uvicorn            # ASGI server for FastAPI/Django
+
+# ===========================================================
+# Database and ORM libraries
+# ===========================================================
+
+import sqlalchemy         # SQL toolkit and ORM
+import peewee             # Simple ORM
+import pymongo            # MongoDB driver
+import redis              # Redis client
+
+import asyncpg            # Async PostgreSQL client
+import psycopg2           # PostgreSQL driver
+import pymysql            # MySQL driver
+
+# ===========================================================
+# Data validation and parsing
+# ===========================================================
+
+import pydantic           # Data validation and settings
+import marshmallow        # Object serialization/deserialization
+import cerberus           # Lightweight validation library
+import voluptuous         # Another schema validation toolkit
+
+# ===========================================================
+# Date, time, and timezone utilities
+# ===========================================================
+
+import dateutil           # Extended date/time utilities
+import pytz               # Timezone definitions
+import arrow              # Easier date/time handling
+import pendulum           # Alternative datetime library
+
+# ===========================================================
+# Natural language and text
+# ===========================================================
+
+import spacy              # Industrial NLP
+import nltk               # Natural language toolkit
+import textblob           # Simple natural language processing
+import vaderSentiment     # Sentiment analysis
+
+# ===========================================================
+# Image, audio, and video processing
+# ===========================================================
+
+import PIL                # Pillow image processing
+import cv2                # OpenCV Python bindings
+import imageio            # General image I/O
+import imagehash          # Perceptual hashing for images
+
+import librosa            # Audio analysis
+import soundfile as sf    # Sound file I/O
+import pydub              # Audio manipulation
+import mutagen            # Audio metadata
+
+import moviepy.editor as moviepy  # Video editing utilities
+
+# ===========================================================
+# Optimization and ML tools
+# ===========================================================
+
+import optuna             # Hyperparameter optimization
+import hyperopt          # Another optimization framework
+import shap               # Model explanation
+import eli5               # Model interpretation
+import lime               # Local interpretable model explanations
+
+import yellowbrick        # Machine learning visualizations
+
+# ===========================================================
+# Plotting and interactive visualization
+# ===========================================================
+
+import plotly             # Interactive plotting
+import bokeh              # Browser‑based visualization
+
+# ===========================================================
+# Web UI frameworks
+# ===========================================================
+
+import streamlit as st    # Dashboard creation
+import dash               # Dash interactive apps
+import dash_bootstrap_components as dbc  # Bootstrap components for Dash
+
+# ===========================================================
+# Web scraping and automation
+# ===========================================================
+
+from bs4 import BeautifulSoup  # HTML parser
+import lxml               # XML and HTML parsing
+import html5lib           # HTML parser
+import scrapy             # Web scraping framework
+import selenium           # Browser automation
+
+# ===========================================================
+# Desktop automation
+# ===========================================================
+
+import pyautogui         # GUI automation
+import keyboard           # Keyboard control
+import mouse              # Mouse control
+import pyperclip         # Clipboard utilities
+
+# ===========================================================
+# GUI and game libraries
+# ===========================================================
+
+import pygame             # Game development
+import arcade             # 2D game framework
+import pyglet             # Multimedia library
+import tkinter
+import PyQt5
+
+# ===========================================================
+# Time series analysis and forecasting
+# ===========================================================
+
+import statsmodels        # Statistical models
+import prophet            # Forecasting library
+import pmdarima           # Time series models
+
+# ===========================================================
+# Graph and geospatial data
+# ===========================================================
+
+import networkx as nx     # Graph analysis
+import graphviz           # Graph drawing
+import pygraphviz         # Graph drawing with Graphviz bindings
+
+import geopandas as gpd   # GeoPandas for geospatial data
+import shapely            # Geometry operations
+import fiona              # GIS data access
+import rasterio           # Raster data handling
+import folium             # Map visualizations
+import cartopy            # Cartographic tools
+import pydeck             # WebGL visualization
+
+# ===========================================================
+# Task queues and background jobs
+# ===========================================================
+
+import celery             # Distributed task queue
+import kombu              # AMQP messaging library
+import rq                 # Simple job queues
+import dramatiq           # Another background tasks library
+
+# ===========================================================
+# Logging and diagnostics
+# ===========================================================
+
+import loguru             # Structured logging
+import structlog          # Logging toolkit
+
+# ===========================================================
+# Code quality and testing tools
+# ===========================================================
+
+import autopep8           # Code formatting
+import black              # Uncompromising formatter
+import isort              # Import sorter
+import flake8             # Style guide enforcement
+import mypy               # Static type checker
+import pylint             # Code analyzer
+
+import pytest             # Testing framework
+import hypothesis         # Property based testing
+import tox                # Test automation
+import behave             # BDD testing
+import coverage           # Test coverage
+
+# ===========================================================
+# Command line and interactive utilities
+# ===========================================================
+
+import click              # Command line interface
+import typer              # Typing‑based CLI framework
+import prompt_toolkit     # Advanced interactive terminal
+
+# ===========================================================
+# Scheduling and monitoring
+# ===========================================================
+
+import watchdog           # Filesystem events
+import schedule           # Job scheduling
+
+# ===========================================================
+# Cloud SDK examples with correct import styles
+# ===========================================================
+
+from azure.storage.blob import BlobServiceClient  # Azure Blob storage client
+import boto3              # AWS SDK
+from google.cloud import storage  # Google Cloud Storage client
+
+# ===========================================================
+# Messaging, bots and AI
+# ===========================================================
+
+import telegram           # Telegram bot API
+import mistralai
+from mistralai import Mistral
